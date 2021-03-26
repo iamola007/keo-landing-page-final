@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta
+ name="keywords"
+ content="Fintech, Finance, Technology, Startup, Wallet"/>
+
+  <!-- Font Awesome CSS -->
+  <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+  integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+  crossorigin="anonymous"
+/>
+
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+ <link rel="stylesheet" href="styles.css">
+ <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+
+    <script type="text/javascript">
+
+      function validateSignUp()
+      {
+        var username = document.getElementById("uname");
+        var password = document.getElementById("pass");
+        var email = document.getElementById("mail");
+        var confirmPassword = document.getElementById("confirm");
+
+        if (username.value.trim() == "")
+        {
+          alert("Please input username.");
+          return false;
+        }
+        else if (email.value.trim() == "")
+        {
+          alert("Please input Email.");
+          return false;
+        }
+        else if (password.value.trim() == "")
+        {
+          alert("Please input password.");
+          return false;
+        }
+        else if (password.value.length < 8)
+        {
+          alert("Password must be at least 8 characters long.");
+          return false;
+        }
+        else if (confirmPassword.value.trim() == "")
+        {
+          alert("Please confirm password.");
+          return false;
+        }
+        else if (confirmPassword.value != password.value)
+        {
+          alert("Passwords do not match.");
+          return false;
+        }
+        else
+        {
+          true;
+        }
+  function show2() {
+    var x = document.getElementById("pass");
+
+    if (y.type === "password") 
+    {
+      y.type = "text";
+    }
+    else {
+      y.type = "password";
+    }
+  }     
+}
+
+        function validateSignIn()
+      {
+        var username1 = document.getElementById("uname1");
+        var password1 = document.getElementById("pass1");
+  
+        if (username1.value.trim() == "")
+        {
+          alert("Please input username.");
+          return false;
+        }
+        
+        else if (password1.value.trim() == "")
+        {
+          alert("Please input password.");
+          return false;
+        }
+        else if (password1.value.length < 8)
+        {
+          alert("Password must be at least 8 characters long.");
+          return false;
+        }
+        
+        else
+        {
+          true;
+        }
+      }
+  
+  function show1() {
+    var x = document.getElementById("pass1");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      
+      x.type = "password";
+    }
+  }
+    </script>
+
+    <link rel="stylesheet" href="style.css" />
+   <title>KEO Wallet</title> 
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid"><a style="color: #374988; font-weight: bold;" class="navbar-brand" href="#">KEO Wallet</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon logo"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" style="margin-left: auto; margin-right: 5rem;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+            
+                <button class="btn btn-primary" style="background-color: #374988; width: 10rem;">Get KEO Wallet</button>
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+      <div class="header-content">
+        <div class="left">
+          <h1>
+            Your money is safe <br />
+            we understand you
+          </h1>
+          <p>
+            We are here to help you save money in the best way possible, carry
+            out seamless transaction in your language with our vocal guide. No
+            complexity!
+          </p>
+          <div class="app-store-btn">
+            <img class="apple-store" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616708749/keo%20landing%20page/aps_ot7igq.png" alt="" />
+            <img class="google-store" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616708750/keo%20landing%20page/gps_thpjod.png" alt="" />
+          </div>
+        </div>
+        <img class="keo-mockup" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616708750/keo%20landing%20page/phot_unhf5h.png" alt="android" />
+      </div>
+      <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616757179/keo%20landing%20page/Ellipse_4_k2ohcx.png" class="bg-eclipse-top" alt="" />
+      <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616757179/keo%20landing%20page/Ellipse_5_vuabc2.png" class="bg-eclipse-bottom" alt="" />
+    </div>
+
+    <!-- Button trigger Sign up modal -->
+    
+    <div class="container-fluid col-lg-3 col-md-3 col-sm-3">
+      <div class="row" style="margin-left: 10px;">
+        <div class="col align-self-center row align-items-center">
+    <button
+      type="button"
+      class="btn btn-primary"
+      style="background-color: #374988;"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+    >
+      Sign Up
+    </button>
+  </div>
+  </div>
+  </div>
+
+    <!-- Modal -->
+    <div
+      style="margin-top: 50px"
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-10" style="margin-left: 30px; margin-top: 10px">
+                  <h1
+                    style="
+                      text-align: center;
+                      margin-bottom: 10px;
+                      color: grey;
+                      font-weight: normal;
+                    "
+                  >
+                    Create Account
+                  </h1>
+                  <p
+                    style="
+                      text-align: center;
+                      margin-bottom: 10px;
+                      color: grey;
+                      font-size: 14px;
+                    "
+                  >
+                    It's free and hardly takes more than 30 seconds.
+                  </p>
+                  <form
+                  onsubmit="return validateSignUp();"
+                    action="message.html"
+                  >
+
+                      <input
+                        style="
+                          border-top: none;
+                          border-left: none;
+                          border-right: none;
+                          margin-bottom: 20px;
+                          font-size: 14px;
+                        "
+                        id="uname"
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        aria-label="Username"
+                      />
+                    
+                      <input
+                        style="
+                          border-top: none;
+                          border-left: none;
+                          border-right: none;
+                          margin-bottom: 20px;
+                          font-size: 14px;
+                        "
+                        id="mail"
+                        type="text"
+                        class="form-control"
+                        placeholder="Email Address"
+                        aria-label="Email Address"
+                      />
+
+                      <input
+                        style="
+                          border-top: none;
+                          border-left: none;
+                          border-right: none;
+                          font-size: 14px;
+                        "
+                        id="pass"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password (at least 8 characters long)"
+                        aria-label="Password"
+                      />
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" onclick="show()">
+                          <label class="form-check-label" style="font-size: 12px; color: grey;" for="invalidCheck2">
+                            show password
+                          </label>
+                        </div>
+                      </div>
+                    <input
+                      style="
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        margin-bottom: 20px;
+                        font-size: 14px;
+                      "
+                      id="confirm"
+                      type="password"
+                      class="form-control"
+                      placeholder="Confirm Password"
+                      aria-label="Confirm Password"
+                    />
+                    
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      style="
+                        width: 100%;
+                        background-color: #374988;
+                        border: none;
+                        margin-bottom: 10px;
+                      "
+                    >
+                      Sign Up
+                    </button>
+                  </form>
+                  
+                  <p style="text-align: center; color: grey; font-size: 14px">
+                    By clicking Sign Up button, you agree to our <br />
+                    <span
+                      ><a href="#" style="text-decoration: none; color: #374988"
+                        >Terms & Conditions</a
+                      ></span
+                    >
+                    and
+                    <span
+                      ><a href="#" style="text-decoration: none; color: #374988"
+                        >Privacy Policy.</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Button trigger Sign In modal -->
+<div class="container-fluid col-lg-3 col-md-3 col-sm-3">
+  <div class="row" style="margin-left: 10px; margin-top: 30px; margin-bottom: 30px;">
+    <div class="col align-self-center row align-items-center">
+<button
+  type="button"
+  class="btn btn-secondary"
+  style="background-color: white; border: solid #374988 2px; color: #374988;"
+  data-bs-toggle="modal"
+  data-bs-target="#exampleModal1"
+>
+  Sign In
+</button>
+</div>
+</div>
+</div>
+
+<!-- Modal -->
+<div
+  style="margin-top: 50px"
+  class="modal fade"
+  id="exampleModal1"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-10" style="margin-left: 30px; margin-top: 20px">
+              <form
+              onsubmit="return validateSignIn();"
+                action="message.html"
+              >
+
+                  <input
+                    style="
+                      border-top: none;
+                      border-left: none;
+                      border-right: none;
+                      margin-bottom: 20px;
+                      font-size: 14px;
+                    "
+                    id="uname1"
+                    type="text"
+                    class="form-control"
+                    placeholder="Username"
+                    aria-label="Username"
+                  />
+
+                  <input
+                    style="
+                      border-top: none;
+                      border-left: none;
+                      border-right: none;
+                      font-size: 14px;
+                    "
+                    id="pass1"
+                    type="password"
+                    class="form-control"
+                    placeholder="Password (at least 8 characters long)"
+                    aria-label="Password"
+                  />
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" onclick="show1()">
+                      <label class="form-check-label" style="font-size: 12px; color: grey;" for="invalidCheck2">
+                        show password
+                      </label>
+                    </div>
+                  </div>
+                
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="
+                    width: 100%;
+                    background-color: #374988;
+                    border: none;
+                    margin-bottom: 10px;
+                    margin-top: 10px;
+                  "
+                >
+                  Sign In
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- The body section. -->
+    <!-- Replace this section with the rest of the body components -->
+     <!-- Features section (Ola's code) -->
+     <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center">
+          <p class="feature-texts  text-center">FEATURES</p>
+          <p class="feature-content  text-center">Let your money work for you without <br>stress</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Four column section -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center feature-notes">
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616631265/keo%20landing%20page/Group_6_aoxkyu.png" alt="">
+          <h3 class="text-center">Language Switch</h3>
+          <p class="feature-body">Carry out transactions in <br>yoruba, igbo, hausa, pidgin or <br>english using our vocal guide.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center feature-notes">
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616631266/keo%20landing%20page/Group_7_c7tfqu.png" alt="">
+          <h3 class="feature-header">Savings</h3>
+          <p class="feature-body">Fund your wallet regularly and <br>earn competitive interest rates <br>depending on how much you <br>save.</p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center feature-notes">
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616631267/keo%20landing%20page/Group_8_ujwnb4.png" alt="">
+          <h3 class="feature-header">Transfer</h3>
+          <p class="feature-body">Initiate transfers and instant <br>payment to other wallets and <br>bank accounts. </p>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-xl-3 text-center feature-notes">
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616631269/keo%20landing%20page/Group_9_i7bo8p.png" alt="">
+          <h3 class="feature-header">Buy Airtime</h3>
+          <p class="feature-body">Purchase airtime and data <br>bundles for all available <br>networks in nigeria.</p>
+        </div>
+      </div>
+    </div>
+
+     <!-- Feature list -->
+    <div class="container-fluid">
+        <div class="row feature-list align-items-center justify-content-around">
+          <img class="col-12 col-sm-8 col-md-4" style="height: auto; width: auto;" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616678303/keo%20landing%20page/Group_13_ejgoxs.png" alt="">
+          <div class="col-12 col-sm-8 col-md-4"><h3>Authentication</h3>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        </div>
+        </div>
+
+        <div class="row feature-list align-items-center justify-content-around">
+          <img class="col-12 col-sm-8 col-md-4 order-md-last" style="height: auto; width: auto;" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616678303/keo%20landing%20page/Group_12_an0zm2.png" alt="">
+          <div class="col-12 col-sm-8 col-md-4 order-md-first"><h3>Vocal guide</h3>
+            <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown</p>
+          </div>
+        </div>
+
+        <div class="row feature-list align-items-center justify-content-around">
+          <img class="col-12 col-sm-8 col-md-4" style="height: auto; width: auto;" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616678303/keo%20landing%20page/Group_10_lzj7sk.png" alt="">
+          <div class="col-12 col-sm-8 col-md-4"><h3>Achieve saving goals</h3>
+          <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        </div>
+        </div>
+
+        <div class="row feature-list align-items-center justify-content-around">
+          <img class="col-12 col-sm-8 col-md-4 order-md-last" style="height: auto; width: auto;" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616678304/keo%20landing%20page/Group_11_h3jd3z.png" alt="">
+          <div class="col-12 col-sm-8 col-md-4 order-md-first"><h3>See where your money goes</h3>
+            <p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+     <!--Frequently Asked Questions (emma's code)-->
+
+     <section class="FAQs">
+      <a href="#"><p class="text-center">FAQs</p></a>
+      <h3 class="text-center">Frequently Asked Questions</h3>
+      <div class="question-cont">
+        <div class="set set1">
+          <div class="quest">
+            <p class="text">Is KEO Wallet a registered financial service?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest">
+            <p class="text">What makes KEO Wallet different?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest">
+            <p class="text">Do you give loans?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest quest-info">
+            <div>
+              <p class="text orange">
+                What do I need to open a KEO Wallet account?
+              </p>
+              <a href="#">
+                <img
+                  src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png"
+                  alt="arrow"
+                  class="arrow"
+              /></a>
+            </div>
+            <div class="info">
+              <p>
+                When she reached the first hills of the Italic Mountains she had
+                a last view back on the skyline of
+              </p>
+            </div>
+          </div>
+          <div class="quest">
+            <p class="text">Why do you need my BVN if you are not a bank?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+        </div>
+        <div class="Middle-line">
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711317/keo%20landing%20page/Ellipse_34_fz1ymj.png" alt="circle" />
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711318/keo%20landing%20page/Line_44_ovie0t.png" alt="Center line" class="line" />
+        </div>
+        <div class="set set3">
+          <div class="quest">
+            <p class="text">Is there a minimum balance?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest">
+            <p class="text">How can you ensure the safety of my money?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest">
+            <p class="text">What fees do you charge?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+          <div class="quest quest-info">
+            <div>
+              <p class="text orange">
+                If there is no fee, how does KEO Wallet make money?
+              </p>
+              <a href="#">
+                <img
+                  src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png"
+                  alt="arrow"
+                  class="arrow"
+              /></a>
+            </div>
+            <div class="info">
+              <p>
+                When she reached the first hills of the Italic Mountains she had
+                a last view back on the skyline of
+              </p>
+            </div>
+          </div>
+          <div class="quest">
+            <p class="text">What kind of account will I get?</p>
+            <a href="#">
+              <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616711072/keo%20landing%20page/ios-arrow-back_1_gjftkg.png" alt="arrow" class="arrow"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- End of body section. -->
+
+<div class="container-fluid foot">    
+<div class="row">
+    <footer>
+      <div class="footer-up">
+        <div class="mockup-phones">
+          <img id="felllo" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616757180/keo%20landing%20page/PSD_2_th6jkn.png" alt="" />
+          <img src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616757180/keo%20landing%20page/PSD_2_th6jkn.png" alt="" />
+          <img id="felllo-2" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616757180/keo%20landing%20page/PSD_2_th6jkn.png" alt="" />
+        </div>
+        <h3>Get your personal wallet now!</h3>
+        <p>Use your money without stress.</p>
+        <h4>Coming to you soon...</h4>
+        <div class="app-store-btn">
+          <img class="apple-store" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616708749/keo%20landing%20page/aps_ot7igq.png" alt="" />
+          <img class="google-store" src="https://res.cloudinary.com/dny4fdht3/image/upload/v1616708750/keo%20landing%20page/gps_thpjod.png" alt="" />
+        </div>
+      </div>
+      <div class="container-fluid footer-nav">
+        <div class="row footer-logo">KEOWallet</div>
+        <div class="col-sm-9 btm-nav">
+          <ul>
+            <li>About</li>
+            <li>Terms &amp; <br>Conditions</li>
+            <li><div class="row social-btn">
+              <div>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-facebook-f"></i>
+            </div>
+            </div></li>
+          </ul>
+        </div>
+        
+      </div>
+    </footer>
+  </div>
+</div>
+ <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+
+  </body>
+</html>
